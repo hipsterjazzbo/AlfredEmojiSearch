@@ -26,3 +26,11 @@ If you want to hack on this workflow:
 2. Create a new workflow in Alfred and replace the copy path in `./go` with it
 3. Run `./go`. It'll build the executable, and copy it to your workflow directory.
 4. Make sure you've got a copy of `index.json` in your workflow directory as well, the executable just look for it in the current directory.
+
+## Todo
+
+Feel free to do one of these and open a pull request 😊
+
+- [ ] Everything needs icons
+- [ ] Figure out why the ~150ms delay on activation and if there's anything I can do about it
+- [ ] And an `option`-select action to just copy without pasting
