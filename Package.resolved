@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftAlfred",
+        "repositoryURL": "https://github.com/BenchR267/swiftalfred.git",
+        "state": {
+          "branch": null,
+          "revision": "b878de98591e9aacccc9ffaac285058ddde04501",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
