@@ -18,7 +18,7 @@ class EmojiSearch {
         let results = doSearch(query: query)
 
         //Format the results for Alfred
-        let items = formatResults(results: results)
+        let items = formatResults(results: results, query: query)
 
         // Output to Alfred
         print(self.jsonString(object: ["items": items]))
@@ -45,13 +45,13 @@ class EmojiSearch {
         return results
     }
 
-    func formatResults(results: [String]) -> [[String: Any]] {
+    func formatResults(results: [String], query: String) -> [[String: Any]] {
         var items: [[String: Any]] = []
 
         // Format results for Alfred
         for result in results {
             items.append([
-                "uid": result,
+                "uid": "\(query)-\(result)",
                 "title": result,
                 "subtitle": "",
                 "arg": result
